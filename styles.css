@@ -62,7 +62,8 @@ html,body{
   font-size:clamp(12px,.8vw,18px);
 }
 .page-pill{
-  height:clamp(36px,3.7vh,50px);
+  direction:ltr;
+   height:clamp(36px,3.7vh,50px);
   min-width:clamp(78px,6vw,120px);
   font-size:clamp(14px,.9vw,20px);
 }
