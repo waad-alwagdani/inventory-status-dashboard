@@ -1,21 +1,27 @@
 # Inventory Status Dashboard
 
-A bilingual, full-screen inventory visibility dashboard prototype designed for large displays.
+A bilingual inventory visibility showcase designed for large displays.
 
-The demo illustrates how supply teams can monitor current stock availability,
-recent status changes, and near-expiry items in a continuously rotating interface.
+![Inventory Status Dashboard](preview.png)
 
-## Demo Behavior
+This demo presents the user-facing concept of an operational inventory status dashboard, allowing viewers to quickly understand:
 
-- 10 fictional inventory updates across two rotating pages
-- Available / Limited / Unavailable / Expected stock states
-- 30-day expiry monitoring with automatic pagination
-- 60-day expiry monitoring with automatic pagination
-- Simulated status refreshes every few seconds
-- Live Riyadh clock and date
-- Animated transitions between pages
-- Responsive full-screen display layout
-- Arabic / English interface
+- Current stock status
+- Availability changes
+- Near-expiry items
+- Rotating operational updates
+- Bilingual Arabic / English presentation
+
+## Live Demo
+
+https://waad-alwagdani.github.io/inventory-status-dashboard/
+
+## Status Types
+
+- Available
+- Limited
+- Unavailable
+- Expected
 
 ## Tech Stack
 
@@ -26,16 +32,16 @@ recent status changes, and near-expiry items in a continuously rotating interfac
 - CSS Grid
 - Responsive UI
 
-## Privacy & Demo Notice
+## Demo Notice
 
-All inventory names, statuses, timestamps, and expiry records in this repository are
-fictional demo data. No production endpoint, healthcare facility, operational system,
-or live inventory source is connected.
+This repository is a portfolio showcase using entirely fictional data.
+
+The public demo represents the user-facing experience only and does not reproduce the architecture, integrations, data sources, synchronization logic, internal workflows, or business rules of any production implementation.
 
 ## Copyright
 
 © 2026 Waad Alwagdani. All Rights Reserved.
 
-This repository is published for portfolio and demonstration purposes only.
-No permission is granted to copy, redistribute, modify, or use this project
-or its source code for commercial or production purposes without prior written permission.
+Published for portfolio and demonstration purposes only.
+
+No permission is granted to copy, redistribute, modify, reproduce, or use this project or its source code for commercial or production purposes without prior written permission.
