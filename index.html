@@ -4,13 +4,88 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inventory Status Dashboard — Demo</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<div class="sync-pill" id="syncStatus">Showcase Demo</div>
-  <script src="script.js" defer></script>
+
+<main class="tv-screen">
+
+  <header class="tv-top">
+
+    <div class="time-group">
+      <div class="date-pill" id="datePill">00/00/0000</div>
+      <div class="time-pill" id="timePill">00:00</div>
+    </div>
+
+    <div class="department-pill">
+      Inventory Status Dashboard
+    </div>
+
+  </header>
+
+  <section class="tv-main">
+
+    <section class="panel">
+
+      <header class="panel-head">
+
+        <div>
+          <h2 class="panel-title">آخر التحديثات</h2>
+          <p class="panel-sub">Latest Updates</p>
+
+          <div class="sync-pill">
+            Showcase Demo
+          </div>
+        </div>
+
+        <div class="page-pill" id="updatePagePill">
+          1 / 2
+        </div>
+
+      </header>
+
+      <div class="list" id="updatesList"></div>
+
+    </section>
+
+    <section class="panel expiry-panel">
+
+      <div class="expiry-box">
+
+        <div class="expiry-head red">
+          <span>تنتهي خلال 30 يوم</span>
+          <span class="en" id="expiry30PagePill">30D 1 / 2</span>
+        </div>
+
+        <div class="expiry-list" id="expiry30"></div>
+
+      </div>
+
+      <div class="expiry-box">
+
+        <div class="expiry-head yellow">
+          <span>تنتهي خلال 60 يوم</span>
+          <span class="en" id="expiry60PagePill">60D 1 / 2</span>
+        </div>
+
+        <div class="expiry-list" id="expiry60"></div>
+
+      </div>
+
+    </section>
+
+  </section>
+
+</main>
+
+<script src="script.js" defer></script>
+
 </body>
 </html>
