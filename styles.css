@@ -1,0 +1,270 @@
+:root{--font-ar:"Noto Sans Arabic",sans-serif;--font-en:"Noto Sans",sans-serif;--bg:#FAFAFA;--surface:#FFFFFF;--surface-soft:#F6F6F6;--border:#E6E6E6;--text:#111111;--muted:#6F6F6F;--available:#00A85A;--limited:#C99A00;--unavailable:#D92D20;--expected:#2563EB;--shadow:0 1px 2px rgba(0,0,0,.035),0 12px 28px rgba(0,0,0,.075),0 30px 70px rgba(0,0,0,.035)}
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--bg);color:var(--text);font-family:var(--font-ar)}.en{font-family:var(--font-en);direction:ltr}.tv-screen{width:100vw;height:100vh;padding:18px;display:grid;grid-template-rows:68px minmax(0,1fr);gap:18px}.tv-top{display:grid;grid-template-columns:minmax(320px,.95fr) minmax(420px,1.7fr);gap:18px;align-items:center}.time-group{display:flex;gap:12px;align-items:center;justify-self:start}.date-pill,.time-pill,.department-pill,.sync-pill{border:1px solid var(--border);background:linear-gradient(180deg,var(--surface),var(--surface-soft));box-shadow:var(--shadow);display:grid;place-items:center;font-weight:800}.date-pill,.time-pill{height:52px;border-radius:999px;font-family:var(--font-en)}.date-pill{min-width:168px;padding:0 22px;font-size:21px}.time-pill{min-width:108px;padding:0 18px;font-size:22px}.department-pill{justify-self:end;width:min(660px,100%);height:68px;border-radius:999px;padding:0 28px;font-size:30px;text-align:center}.tv-main{min-height:0;display:grid;grid-template-columns:minmax(0,55fr) minmax(0,45fr);gap:14px;overflow:hidden}.panel{min-height:0;background:var(--surface);border:1px solid var(--border);border-radius:28px;box-shadow:var(--shadow);padding:18px;display:flex;flex-direction:column;gap:14px;overflow:hidden}.panel-head{flex:0 0 auto;padding-bottom:12px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.panel-title{margin:0;font-size:28px;line-height:1.25;font-weight:800}.panel-sub{margin:4px 0 0;color:var(--muted);font-family:var(--font-en);font-size:13px}.sync-pill{height:30px;min-width:170px;padding:0 12px;border-radius:999px;font-family:var(--font-en);font-size:11px;color:var(--muted);box-shadow:none;margin-top:8px}.page-pill{height:34px;min-width:74px;padding:0 14px;border-radius:999px;display:grid;place-items:center;font-family:var(--font-en);font-weight:800;font-size:13px;color:var(--muted);background:linear-gradient(180deg,var(--surface),var(--surface-soft));box-shadow:inset 0 1px 0 rgba(255,255,255,.35)}.list{flex:1 1 auto;min-height:0;display:grid;grid-template-rows:repeat(5,minmax(0,1fr));gap:14px;overflow:hidden}.card{position:relative;isolation:isolate;overflow:hidden;display:grid;direction:ltr;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:"meta info info icon";gap:16px;align-items:center;padding:12px 18px;border-radius:18px;background:linear-gradient(180deg,var(--surface),var(--surface-soft));box-shadow:0 1px 2px rgba(0,0,0,.035),0 10px 24px rgba(0,0,0,.065),inset 0 1px 0 rgba(255,255,255,.70)}.card::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}.card[data-status="available"]::before{background:linear-gradient(270deg,rgba(0,168,90,.24) 0%,rgba(0,168,90,.14) 23%,rgba(0,168,90,.045) 52%,transparent 76%)}.card[data-status="limited"]::before{background:linear-gradient(270deg,rgba(201,154,0,.24) 0%,rgba(201,154,0,.14) 23%,rgba(201,154,0,.045) 52%,transparent 76%)}.card[data-status="unavailable"]::before{background:linear-gradient(270deg,rgba(217,45,32,.24) 0%,rgba(217,45,32,.14) 23%,rgba(217,45,32,.045) 52%,transparent 76%)}.card[data-status="expected"]::before{background:linear-gradient(270deg,rgba(37,99,235,.24) 0%,rgba(37,99,235,.14) 23%,rgba(37,99,235,.045) 52%,transparent 76%)}.icon{grid-area:icon;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;justify-self:center;position:relative;font-size:26px;font-weight:900}.icon::before{content:"";position:absolute;inset:-7px;border-radius:50%;background:currentColor;opacity:.14}.card[data-status="available"] .icon{color:var(--available)}.card[data-status="limited"] .icon{color:var(--limited)}.card[data-status="unavailable"] .icon{color:var(--unavailable)}.card[data-status="expected"] .icon{color:var(--expected)}.info{grid-area:info;min-width:0;direction:rtl;text-align:right}.title{margin:0;font-size:clamp(16px,1.15vw,21px);line-height:1.28;font-weight:800;color:var(--text)}.sub{margin:5px 0 0;color:var(--muted);font-size:clamp(12px,.82vw,14px);line-height:1.35;font-weight:500;direction:ltr;text-align:left}.meta{grid-area:meta;justify-self:end;text-align:end;direction:ltr;font-family:var(--font-en);color:var(--muted);display:grid;gap:2px;white-space:nowrap}.meta strong{color:var(--text);font-size:15px;font-weight:800}.meta span{font-size:13px;font-weight:600}.expiry-panel{display:grid;grid-template-rows:1fr 1fr;gap:14px;min-height:0}.expiry-box{min-height:0;display:flex;flex-direction:column;overflow:hidden;border-radius:22px;background:linear-gradient(180deg,var(--surface),var(--surface-soft));box-shadow:0 1px 2px rgba(0,0,0,.035),0 12px 28px rgba(0,0,0,.060),inset 0 1px 0 rgba(255,255,255,.70)}.expiry-head{flex:0 0 auto;height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font-weight:900}.expiry-head.red{color:#B42318;background:linear-gradient(180deg,rgba(217,45,32,.18),rgba(217,45,32,.035))}.expiry-head.yellow{color:#8D6B00;background:linear-gradient(180deg,rgba(201,154,0,.18),rgba(201,154,0,.035))}.expiry-list{min-height:0;flex:1 1 auto;display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:10px;padding:12px;overflow:hidden}.expiry-card{min-height:0;padding:9px 12px}.empty-slot{border-radius:18px;opacity:.25;background:linear-gradient(180deg,var(--surface),var(--surface-soft));box-shadow:inset 0 1px 0 rgba(255,255,255,.55)}.empty-message{grid-row:span 5;display:grid;place-items:center;text-align:center;color:var(--muted);border-radius:18px;background:linear-gradient(180deg,var(--surface),var(--surface-soft))}.empty-message strong{color:var(--text);display:block;font-size:20px;margin-bottom:6px}.list,.expiry-list{transition:opacity 620ms cubic-bezier(.2,.8,.2,1),transform 620ms cubic-bezier(.2,.8,.2,1),filter 620ms cubic-bezier(.2,.8,.2,1);will-change:opacity,transform,filter}.list.page-changing,.expiry-list.page-changing{opacity:0;transform:translateY(12px) scale(.992);filter:blur(2px)}
+
+
+/* =========================================================
+   INVENTORY STATUS DASHBOARD — SAFE-FIT MODE
+   حل مشكلة قص البيانات على التلفزيون:
+   - مساحة آمنة من أطراف الشاشة
+   - الاسم يأخذ عرض أكبر بدل ما ينحشر
+   - حجم واضح بدون خروج خارج الكروت
+   - لا تغيير في السينك ولا توقيت الصفحات
+   ========================================================= */
+html,body{
+  overscroll-behavior:none;
+}
+.tv-screen{
+  width:100vw;
+  height:100dvh;
+  padding:clamp(22px,2vw,52px);
+  grid-template-rows:clamp(64px,7vh,92px) minmax(0,1fr);
+  gap:clamp(14px,1.3vw,26px);
+}
+.tv-top{
+  gap:clamp(14px,1.3vw,26px);
+}
+.date-pill,
+.time-pill{
+  height:clamp(52px,5.2vh,72px);
+  font-size:clamp(21px,1.45vw,34px);
+}
+.date-pill{
+  min-width:clamp(170px,12vw,260px);
+}
+.time-pill{
+  min-width:clamp(112px,8vw,170px);
+}
+.department-pill{
+  height:clamp(64px,7vh,92px);
+  font-size:clamp(30px,2.1vw,48px);
+}
+.tv-main{
+  grid-template-columns:minmax(0,54fr) minmax(0,46fr);
+  gap:clamp(14px,1.3vw,26px);
+}
+.panel{
+  border-radius:clamp(26px,2vw,42px);
+  padding:clamp(18px,1.55vw,32px);
+  gap:clamp(14px,1.25vw,24px);
+}
+.panel-head{
+  padding-bottom:clamp(12px,1vw,20px);
+}
+.panel-title{
+  font-size:clamp(30px,2vw,48px);
+}
+.panel-sub{
+  font-size:clamp(14px,.95vw,22px);
+}
+.sync-pill{
+  height:clamp(30px,3.1vh,42px);
+  min-width:clamp(170px,12vw,260px);
+  font-size:clamp(12px,.8vw,18px);
+}
+.page-pill{
+  height:clamp(36px,3.7vh,50px);
+  min-width:clamp(78px,6vw,120px);
+  font-size:clamp(14px,.9vw,20px);
+}
+.list{
+  gap:clamp(12px,1vw,22px);
+}
+.card{
+  /* بدل 4 أرباع ضيقة: خلي الاسم ياخذ أكبر مساحة ممكنة */
+  grid-template-columns:minmax(92px,7vw) minmax(0,1fr) minmax(64px,5.8vw);
+  grid-template-areas:"meta info icon";
+  gap:clamp(10px,1vw,22px);
+  padding:clamp(13px,1.08vw,24px);
+  border-radius:clamp(20px,1.5vw,32px);
+  overflow:hidden;
+}
+.icon{
+  width:clamp(58px,4.7vw,96px);
+  height:clamp(58px,4.7vw,96px);
+  font-size:clamp(30px,2.5vw,54px);
+}
+.icon::before{
+  inset:clamp(-9px,-.7vw,-5px);
+}
+.info{
+  min-width:0;
+  max-width:100%;
+  padding-inline:clamp(4px,.45vw,10px);
+}
+.title{
+  font-size:clamp(22px,1.38vw,36px);
+  line-height:1.18;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+.sub{
+  margin-top:clamp(5px,.45vw,10px);
+  font-size:clamp(16px,.92vw,24px);
+  line-height:1.22;
+  text-align:right;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+.meta strong{
+  font-size:clamp(18px,1.2vw,30px);
+}
+.meta span{
+  font-size:clamp(14px,.86vw,22px);
+}
+.expiry-panel{
+  gap:clamp(14px,1.2vw,26px);
+}
+.expiry-box{
+  border-radius:clamp(24px,1.7vw,36px);
+}
+.expiry-head{
+  height:clamp(58px,5.8vh,78px);
+  padding:0 clamp(16px,1.2vw,26px);
+  font-size:clamp(20px,1.25vw,30px);
+}
+.expiry-list{
+  gap:clamp(10px,.8vw,18px);
+  padding:clamp(12px,1vw,22px);
+}
+.expiry-card{
+  grid-template-columns:minmax(90px,6.4vw) minmax(0,1fr) minmax(58px,4.9vw);
+  padding:clamp(13px,.9vw,20px);
+}
+.expiry-card .title{
+  font-size:clamp(20px,1.18vw,32px);
+}
+.expiry-card .sub{
+  font-size:clamp(15px,.82vw,22px);
+}
+.empty-message strong{
+  font-size:clamp(22px,1.4vw,34px);
+}
+.empty-message span{
+  font-size:clamp(15px,.95vw,24px);
+}
+.empty-slot{
+  border-radius:clamp(20px,1.4vw,30px);
+}
+
+/* لو المتصفح مو Full Screen وفيه شريط علوي/تاسكبار، يصغر شوي عشان ما ينقص */
+@media (max-height:850px){
+  .tv-screen{padding:20px;gap:14px;grid-template-rows:60px minmax(0,1fr)}
+  .department-pill{height:60px;font-size:28px}
+  .date-pill,.time-pill{height:50px;font-size:20px}
+  .panel{padding:16px;gap:12px}
+  .panel-title{font-size:28px}
+  .panel-head{padding-bottom:10px}
+  .card{padding:10px 14px;gap:10px;grid-template-columns:82px minmax(0,1fr) 58px}
+  .icon{width:52px;height:52px;font-size:28px}
+  .title{font-size:20px;line-height:1.16}
+  .sub{font-size:14px;line-height:1.16;margin-top:4px}
+  .meta strong{font-size:16px}.meta span{font-size:12px}
+  .expiry-head{height:50px;font-size:18px}
+  .expiry-list{padding:10px;gap:8px}
+}
+
+
+
+/* =========================================================
+   PATCH V5 — ALL CARDS COMPACT BALANCED
+   يطبق على آخر التحديثات + تواريخ الانتهاء:
+   - تصغير الدوائر
+   - تخفيف سمك العربي
+   - منع خروج النص من الكرت
+   - حفظ تبديل الصفحات 35 ثانية والسينك 20 ثانية
+   ========================================================= */
+.card{
+  overflow:hidden !important;
+  grid-template-columns:minmax(104px,7.2vw) minmax(0,1fr) minmax(62px,4.9vw) !important;
+  grid-template-areas:"meta info icon" !important;
+  gap:clamp(8px,.75vw,16px) !important;
+  padding:clamp(12px,.85vw,18px) clamp(16px,1vw,24px) !important;
+  align-items:center !important;
+}
+.icon{
+  width:clamp(42px,3.25vw,66px) !important;
+  height:clamp(42px,3.25vw,66px) !important;
+  font-size:clamp(24px,1.85vw,36px) !important;
+  justify-self:center !important;
+  margin:0 !important;
+}
+.icon::before{
+  inset:-4px !important;
+  opacity:.12 !important;
+}
+.info{
+  overflow:hidden !important;
+  padding-inline:clamp(4px,.35vw,8px) !important;
+}
+.title{
+  font-size:clamp(20px,1.05vw,30px) !important;
+  font-weight:700 !important;
+  line-height:1.17 !important;
+  letter-spacing:0 !important;
+  display:-webkit-box !important;
+  -webkit-line-clamp:2 !important;
+  -webkit-box-orient:vertical !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+}
+.sub{
+  margin-top:4px !important;
+  font-size:clamp(14px,.75vw,20px) !important;
+  font-weight:400 !important;
+  line-height:1.12 !important;
+  color:#666 !important;
+  text-align:right !important;
+  display:-webkit-box !important;
+  -webkit-line-clamp:1 !important;
+  -webkit-box-orient:vertical !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+}
+.meta{
+  justify-self:start !important;
+  text-align:start !important;
+  min-width:clamp(92px,6.7vw,132px) !important;
+}
+.meta strong{
+  font-size:clamp(16px,.95vw,24px) !important;
+  line-height:1.08 !important;
+}
+.meta span{
+  font-size:clamp(12px,.72vw,18px) !important;
+  line-height:1.08 !important;
+}
+.expiry-card{
+  grid-template-columns:minmax(104px,7.2vw) minmax(0,1fr) minmax(52px,4.2vw) !important;
+  padding:clamp(11px,.78vw,16px) clamp(14px,.9vw,20px) !important;
+}
+.expiry-card .icon{
+  width:clamp(34px,2.45vw,48px) !important;
+  height:clamp(34px,2.45vw,48px) !important;
+  font-size:clamp(19px,1.35vw,26px) !important;
+}
+.expiry-card .title{
+  font-size:clamp(18px,.95vw,27px) !important;
+}
+.expiry-card .sub{
+  font-size:clamp(13px,.68vw,18px) !important;
+}
+.expiry-card .meta strong{
+  font-size:clamp(14px,.8vw,20px) !important;
+}
+.expiry-card .meta span{
+  font-size:clamp(11px,.62vw,15px) !important;
+}
+
+@media (max-height:850px){
+  .card{
+    grid-template-columns:84px minmax(0,1fr) 46px !important;
+    padding:10px 13px !important;
+    gap:8px !important;
+  }
+  .icon{width:34px !important;height:34px !important;font-size:19px !important;}
+  .icon::before{inset:-2px !important;}
+  .title{font-size:17px !important;font-weight:700 !important;line-height:1.14 !important;}
+  .sub{font-size:12px !important;line-height:1.1 !important;}
+  .meta strong{font-size:13px !important;}
+  .meta span{font-size:10px !important;}
+}
