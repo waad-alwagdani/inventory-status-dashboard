@@ -2,7 +2,8 @@
 // Fictional display content only. This file does not represent production architecture,
 // data sources, integrations, business rules, or synchronization logic.
 
-const FRAME_MS = 8000;
+const FRAME_MS = 12000;
+const TRANSITION_MS = 620;
 
 const showcaseFrames = [
   {
@@ -67,12 +68,12 @@ function statusCard([ar, en, status, time]) {
     <article class="card" data-status="${safe(status)}">
       <div class="icon">${iconFor(status)}</div>
       <div class="info">
-        <h3 class="title">${safe(ar)}</h3>
-        <p class="sub en">${safe(en)}</p>
+        <h3 class="title" lang="ar" dir="rtl">${safe(ar)}</h3>
+        <p class="sub en" lang="en" dir="ltr">${safe(en)}</p>
       </div>
       <div class="meta">
-        <strong>${safe(time)}</strong>
-        <span>Demo</span>
+        <strong lang="en" dir="ltr">${safe(time)}</strong>
+        <span lang="en" dir="ltr">Demo</span>
       </div>
     </article>`;
 }
@@ -82,12 +83,12 @@ function expiryCard([ar, en, date, days], status) {
     <article class="card expiry-card" data-status="${status}">
       <div class="icon">${status === "unavailable" ? "×" : "!"}</div>
       <div class="info">
-        <h3 class="title">${safe(ar)}</h3>
-        <p class="sub en">${safe(en)}</p>
+        <h3 class="title" lang="ar" dir="rtl">${safe(ar)}</h3>
+        <p class="sub en" lang="en" dir="ltr">${safe(en)}</p>
       </div>
       <div class="meta">
-        <strong>${safe(date)}</strong>
-        <span>${safe(days)}</span>
+        <strong lang="en" dir="ltr">${safe(date)}</strong>
+        <span lang="en" dir="ltr">${safe(days)}</span>
       </div>
     </article>`;
 }
@@ -103,7 +104,7 @@ function fadeAndReplace(elements, draw) {
         element.classList.remove("page-changing");
       });
     });
-  }, 620);
+  }, window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : TRANSITION_MS);
 }
 
 let frameIndex = 0;

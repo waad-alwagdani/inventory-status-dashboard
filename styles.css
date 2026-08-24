@@ -269,3 +269,47 @@ html,body{
   .meta strong{font-size:13px !important;}
   .meta span{font-size:10px !important;}
 }
+
+/* Keep each language isolated while preserving the existing visual hierarchy. */
+.info{
+  direction:rtl;
+  text-align:start;
+}
+.sub{
+  direction:ltr;
+  text-align:end;
+  unicode-bidi:isolate;
+}
+.meta{
+  direction:ltr;
+  text-align:start;
+}
+.expiry-head{
+  direction:rtl;
+}
+
+/* Calm, coordinated frame changes for passive displays. */
+.list,
+.expiry-list{
+  transition:
+    opacity 620ms cubic-bezier(.2,.8,.2,1),
+    transform 620ms cubic-bezier(.2,.8,.2,1);
+  will-change:opacity,transform;
+}
+.list.page-changing,
+.expiry-list.page-changing{
+  opacity:0;
+  transform:translateY(4px) scale(.998);
+  filter:none;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .list,
+  .expiry-list{
+    transition-duration:1ms;
+  }
+  .list.page-changing,
+  .expiry-list.page-changing{
+    transform:none;
+  }
+}

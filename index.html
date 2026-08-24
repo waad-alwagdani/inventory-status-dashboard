@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inventory Status Dashboard — Demo</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111'/%3E%3Cpath d='M18 18h28v8H18zm0 14h20v8H18zm0 14h28v8H18z' fill='%23fff'/%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +21,11 @@
   <header class="tv-top">
 
     <div class="time-group">
-      <div class="date-pill" id="datePill">00/00/0000</div>
-      <div class="time-pill" id="timePill">00:00</div>
+      <div class="date-pill" id="datePill" lang="en" dir="ltr">00/00/0000</div>
+      <div class="time-pill" id="timePill" lang="en" dir="ltr">00:00</div>
     </div>
 
-    <div class="department-pill">
+    <div class="department-pill" lang="en" dir="ltr">
       Inventory Status Dashboard
     </div>
 
@@ -37,10 +38,10 @@
       <header class="panel-head">
 
         <div>
-          <h2 class="panel-title">آخر التحديثات</h2>
-          <p class="panel-sub">Latest Updates</p>
+          <h2 class="panel-title" lang="ar" dir="rtl">آخر التحديثات</h2>
+          <p class="panel-sub" lang="en" dir="ltr">Latest Updates</p>
 
-          <div class="sync-pill">
+          <div class="sync-pill" lang="en" dir="ltr">
             Showcase Demo
           </div>
         </div>
@@ -60,8 +61,8 @@
       <div class="expiry-box">
 
         <div class="expiry-head red">
-          <span>تنتهي خلال 30 يوم</span>
-          <span class="en" id="expiry30PagePill">30D 1 / 2</span>
+           <span lang="ar" dir="rtl">تنتهي خلال 30 يوم</span>
+           <span class="en" id="expiry30PagePill" lang="en" dir="ltr">30D 1 / 2</span>
         </div>
 
         <div class="expiry-list" id="expiry30"></div>
@@ -71,8 +72,8 @@
       <div class="expiry-box">
 
         <div class="expiry-head yellow">
-          <span>تنتهي خلال 60 يوم</span>
-          <span class="en" id="expiry60PagePill">60D 1 / 2</span>
+           <span lang="ar" dir="rtl">تنتهي خلال 60 يوم</span>
+           <span class="en" id="expiry60PagePill" lang="en" dir="ltr">60D 1 / 2</span>
         </div>
 
         <div class="expiry-list" id="expiry60"></div>
