@@ -35,4 +35,6 @@ Prototype / in progress — feedback welcome.
 
 ## License
 
-<!-- Add a license if you want others to be able to reuse this, e.g. MIT -->
+© Waad Alwagdani. All rights reserved.
+ 
+This project is shared publicly for portfolio and demonstration purposes only. No permission is granted to copy, modify, distribute, or reuse this code without prior written consent.
