@@ -1,16 +1,16 @@
 # Inventory Status Dashboard
 
-A bilingual (Arabic / English) inventory visibility dashboard for real-time stock status, availability monitoring, and near-expiry alerts.
+A bilingual (Arabic / English) real-time inventory intelligence experience — built to turn stock awareness into instinct.
 
 ## Why this exists
 
-Pharmacy and stock teams often catch shortages and near-expiry inventory too late, after the problem is already visible to patients or customers. This dashboard surfaces stock health at a glance so issues get caught before they become shortages.
+In fast-moving, high-pressure environments, the cost of finding out too late is real: a shortage that could've been caught, an item that expired unnoticed. This project reimagines inventory awareness as something ambient and instant, always a glance away, instead of something you have to stop and go looking for.
 
 ## Features
 
-- Real-time stock status overview
-- Availability monitoring by item / category
-- Near-expiry alerts and highlighting
+- Real-time inventory status intelligence
+- Instant visibility into availability and near-expiry risk
+- Built for environments where every second of distraction has a cost
 - Bilingual interface (Arabic / English) with RTL-aware layout
 
 ## Tech stack
@@ -36,5 +36,5 @@ Prototype / in progress — feedback welcome.
 ## License
 
 © Waad Alwagdani. All rights reserved.
- 
+
 This project is shared publicly for portfolio and demonstration purposes only. No permission is granted to copy, modify, distribute, or reuse this code without prior written consent.
