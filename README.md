@@ -27,9 +27,7 @@ cd inventory-status-dashboard
 
 ## Screenshots
 
-<!-- Add a screenshot or short GIF of the dashboard here.
-     This is the single highest-impact addition you can make to this repo —
-     recruiters and reviewers judge a project by its screenshot before reading a word. -->
+![Dashboard preview](preview.png)
 
 ## Status
 
